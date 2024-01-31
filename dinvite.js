@@ -21,7 +21,7 @@ client.on("ready", async () => {
     let collect = new Collection();
     
     client.guilds.cache.forEach(async (guild) => {
-          if(!guild.members.me.permissions.has("ManageGuild")) {
+          if(!member.guild.members.me.permissions.has("ManageGuild")) {
      console.log("I didn't have permission in following Guild To Setup Invite System" + `${guild.name} : ${guild.id}`)
               
               return;
